@@ -84,7 +84,7 @@ def veg_response():
 
         ingredient = []
         measure = []
-        meat = ["beef", "chicken", "pork", "egg","eggs", "fish", "prawn", "prawn", "egg white", "shrimp", "anchovy", "anchovy fillet", "prawns", "chicken stock", "chicken breast", "chicken thighs", "chicken thigh", "chicken legs", "clams", "mussels", "ground beef", "lamb", "goat"]
+        meat = ["beef", "chicken", "pork", "egg","goat meat", "lamb meat","goat leg meat", "lamb leg meat","eggs", "fish", "prawn", "prawn", "egg white", "shrimp", "anchovy", "anchovy fillet", "prawns", "chicken stock", "chicken breast", "chicken thighs", "chicken thigh", "chicken legs", "clams", "mussels", "ground beef", "lamb", "goat"]
         nonveg = False
         for x in range(0, len(ingredient_index)):
             tem = ingredient_index[x]
