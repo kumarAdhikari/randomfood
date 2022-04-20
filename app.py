@@ -61,8 +61,10 @@ def veg_response():
     nonvege = False
     while nonvege == False:
         apikey_url = "https://www.themealdb.com/api/json/v1/1/random.php"
-        response = requests.get(apikey_url)
-        heart = "\u2764\ufe0f"
+        try:
+            response = requests.get(apikey_url)
+        except:
+            response = requests.get(apikey_url)
         response = response.json()
         meal_name = response['meals'][0]["strMeal"]
         nationality = response['meals'][0]["strArea"]
