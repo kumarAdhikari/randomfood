@@ -32,6 +32,7 @@
 
 body{
     background-color: aquamarine;
+    padding-left: 3px;
 }
 .row {
   display: flex;

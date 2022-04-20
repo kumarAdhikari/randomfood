@@ -21,7 +21,7 @@ def initial_response():
     thumbnail = str(response['meals'][0]["strMealThumb"])
     ingredient_index = []
     measure_index = []
-    list_receipe = receipe.split("\r\n\r\n")
+    list_receipe = receipe.split("\r\n")
     length_receipe = len(list_receipe)
     for x in response['meals'][0]:
         if "strIngredient" in x:
